@@ -2,7 +2,8 @@ import React from "react";
 import "./styles.css";
 import Header from "./components/Header";
 import Balance from "./components/Balance";
-import { incomeExpenses } from './components/incomeExpenses'
+import IncomeExpense from './components/IncomeExpense'
+import {TransactionList} from './components/TransactionList'
 
 export default function App() {
   return (
@@ -10,8 +11,8 @@ export default function App() {
       <Header />
       <div className="container">
         <Balance />
+        <IncomeExpense />
       </div>
-      <incomeExpenses />
     </div>
   );
 }
